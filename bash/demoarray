@@ -1,0 +1,17 @@
+#!/bin/bash
+
+colours=("red" "green" "blue")
+declare -A animals
+animals=([red]="cardinal" [green]="frog" [blue]="lobster")
+echo "${colours[0]}, ${colours[1]}, ${colours[2]} are all in my colours array"
+echo "My colours are: ${colours[@]}"
+echo "My animals array has: ${animals[@]}."
+echo "${animals[red]}, ${animals[green]}, ${animals[blue]} are in my animal array"
+
+num=0
+
+echo "Number $num chooses the colour ${colours[$num]}"
+read -p "Pick a number from 1 to 3: "
+
+colour=${colour[$num]}
+animal=${animals[$colour]}
